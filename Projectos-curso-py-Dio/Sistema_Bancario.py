@@ -1,9 +1,10 @@
 mensagem = "Sistema Bancario"
 mensagem_deposito = "Deposito"
-mensagem_saque = "Deposito"
+mensagem_saque = "Saque"
 mensagem_extrato = "Extrato"
 extrato = ""
 saldo  = 0
+i, e = 1, 1
 print("\n", mensagem.center(25))
 while True:
     print("[1] Deposito\n[2] Saque\n[3] Extrato\n[0] Sair")
@@ -17,6 +18,10 @@ while True:
             valor = int(input("digite o valor: "))
             if valor < 1:
                 print("Deposito invalido\nTente novamente:")
+                i+=1
+                if i == 3:
+                    print()
+                    break
             else:
                 saldo+= valor
                 extrato+= f"\nDeposito:R$ {valor}"
@@ -30,6 +35,12 @@ while True:
                 print("Não tens Saldo suficiente!")
                 if i == 1:
                     print()
+            elif(saque<=0):
+                print("saldo invalido!")
+                e+1
+                if e == 3:
+                    print()
+                    break
             else:
                 saldo-=saque
                 extrato+= f"\nSaque:R$ {saque}"
