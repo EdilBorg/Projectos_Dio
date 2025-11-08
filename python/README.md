@@ -1,36 +1,15 @@
-#Cardápio de Restaurante em Python
+# Jogo de Adivinhação de Números
 
-Este programa mostra um cardápio interativo no terminal.
-O usuário pode escolher uma categoria de comida, selecionar pratos e ver o total do pedido.
+Jogo para 2 jogadores, onde cada jogador escolhe um número secreto de 1 a 10 e o outro tenta adivinhar. Acertar o número dá 1 ponto. Cada rodada tem 3 tentativas por jogador.  
 
-#Como funciona
+## Como jogar
 
-O programa mostra o menu principal com várias categorias:
+1. Digite o nome dos 2 jogadores.
+2. Um jogador escolhe um número secreto (não será mostrado).
+3. O outro jogador tenta adivinhar.
+4. O jogo mostra se o palpite está correto e quantos pontos cada jogador tem.
+5. Você pode continuar jogando ou encerrar a qualquer momento.
 
-Sopas e caldos
+## Como rodar
 
-Pratos principais (carnes e massas)
-
-Acompanhamentos
-
-Saladas
-
-O usuário digita o número da opção desejada.
-
-Dentro de cada categoria, ele escolhe o prato e o preço é adicionado ao total.
-
-A opção [6] mostra todos os pedidos e o valor total.
-
-A opção [0] encerra o programa.
-
-#O que o código usa
-
-while True → para repetir os menus até o usuário sair.
-
-if e elif → para verificar as opções.
-
-lista → guarda os pedidos.
-
-variável valor → soma o preço total.
-
-função mensagem() → mostra os menus de massas, acompanhamentos e saladas.
+No terminal
